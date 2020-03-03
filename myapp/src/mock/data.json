@@ -1,0 +1,36 @@
+{
+    "list":[{
+        "bannerId": 363,
+        "actionType": 2,
+        "actionData": "{\"url\":\"https://m.maizuo.com/mz-act/brand/groupon/LvEzsTL40p?partnerId=mz\u0026co=mzmovie\"}",
+        "imgUrl": "https://static.maizuo.com/v5/upload/189bcf606b4bf49ad5de201a2ea5024d.jpg",
+        "masterTitle": "",
+        "slaveTitle": "",
+        "displayOrder": 0,
+        "bindBusinessId": "",
+        "cityIds": "310100",
+        "name": "【上海】SFC上影影城电影兑换券",
+        "displayTimes": 0,
+        "slaveImgUrl": "",
+        "startTime": "1578585600",
+        "endTime": "1609430399",
+        "businessId": ""
+    },
+    {
+        "bannerId": 364,
+        "actionType": 2,
+        "actionData": "{\"url\":\"https://m.maizuo.com/mz-act/brand/groupon/LvEzsTL40p?partnerId=mz\u0026co=mzmovie\"}",
+        "imgUrl": "https://static.maizuo.com/v5/upload/189bcf606b4bf49ad5de201a2ea5024d.jpg",
+        "masterTitle": "",
+        "slaveTitle": "",
+        "displayOrder": 0,
+        "bindBusinessId": "",
+        "cityIds": "310100",
+        "name": "【上海】SFC上影影城电影兑换券",
+        "displayTimes": 0,
+        "slaveImgUrl": "",
+        "startTime": "1578585600",
+        "endTime": "1609430399",
+        "businessId": ""
+    }]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "1459822",
+  "name": "1912",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "740854",
+      "name": "个人中心",
+      "font_class": "gerenzhongxin",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "11341078",
+      "name": "9navbar_主页",
+      "font_class": "navbar_zhuye",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "12975004",
+      "name": "商品-购物袋",
+      "font_class": "shangpin-gouwudai",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "13029338",
+      "name": "我的应用",
+      "font_class": "wodeyingyong",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "11755307",
+      "name": "cloud-partner",
+      "font_class": "cloud-partner",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "11755308",
+      "name": "data-platform",
+      "font_class": "data-platform",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "11755310",
+      "name": "import-meau",
+      "font_class": "import-meau",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "9214973",
+      "name": "爱心_line",
+      "font_class": "aixin",
+      "unicode": "e872",
+      "unicode_decimal": 59506
+    },
+    {
+      "icon_id": "9214974",
+      "name": "编辑_line",
+      "font_class": "bianji",
+      "unicode": "e873",
+      "unicode_decimal": 59507
+    },
+    {
+      "icon_id": "9214975",
+      "name": "成功_line",
+      "font_class": "chenggong",
+      "unicode": "e874",
+      "unicode_decimal": 59508
+    },
+    {
+      "icon_id": "9214976",
+      "name": "阿里鱼_line",
+      "font_class": "aliyu",
+      "unicode": "e875",
+      "unicode_decimal": 59509
+    },
+    {
+      "icon_id": "11265316",
+      "name": "Christmas icons-02",
+      "font_class": "Christmasicons-",
+      "unicode": "e88c",
+      "unicode_decimal": 59532
+    },
+    {
+      "icon_id": "11265317",
+      "name": "Christmas icons-01",
+      "font_class": "Christmasicons-1",
+      "unicode": "e88d",
+      "unicode_decimal": 59533
+    },
+    {
+      "icon_id": "11265326",
+      "name": "Christmas icons-20",
+      "font_class": "Christmasicons-2",
+      "unicode": "e88f",
+      "unicode_decimal": 59535
+    },
+    {
+      "icon_id": "11265334",
+      "name": "Christmas icons-07",
+      "font_class": "Christmasicons-3",
+      "unicode": "e88e",
+      "unicode_decimal": 59534
+    },
+    {
+      "icon_id": "11265335",
+      "name": "Christmas icons-15",
+      "font_class": "Christmasicons-4",
+      "unicode": "e891",
+      "unicode_decimal": 59537
+    }
+  ]
+}
