@@ -60,7 +60,7 @@ class App extends React.Component{
             <Redirect from="/" to="/home" exact />
             <Route component={NotFound} />
         </Switch>
-        <ul className="footer" style={{"display":this.state.visible?'':"none"}}>
+        <ul className="footer">
            <li><NavLink to="/home"><span className="iconfont">&#xe600;</span>首页</NavLink></li>
            <li><NavLink to="/list"><span className="iconfont">&#xe601;</span>分类</NavLink></li>
            <li><NavLink to="/car"><span className="iconfont">&#xe634;</span>购物车</NavLink></li>

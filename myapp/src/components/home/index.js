@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
+import {Route,NavLink,Redirect,Switch} from 'react-router-dom'
 import './home.css'
 import Swiper from 'swiper'
 import 'swiper/css/swiper.css'
-
+import Tuijian from '../tuijian'
+import Zhineng from '../zhineng'
+import Dianqi from '../dianqi'
+import Shenghuo from '../shenghuo'
 export default class Home extends Component {
     constructor(props){
         super(props)
@@ -163,9 +167,148 @@ export default class Home extends Component {
                             <span>支持人数</span><span>9758</span><span>/</span><span>完成度</span><span>487%</span>
                             <p></p>
                         </div>
+                        <div className="info2">
+                            <div className="content1">
+                                <div>烘干消毒器</div>
+                                <div>￥129</div>
+                                <img src={require("../../assets/img/21.png")} />
+                                <div className="info-footer">
+                                    <img src={require("../../assets/img/20.png")} />
+                                    <span>支持人数</span><span>9758</span><p></p>
+                                </div>
+                            </div>
+
+                            <div className="content2">
+                                <div>九号电动C40</div>
+                                <div>￥4199</div>
+                                <img src={require("../../assets/img/22.png")} />
+                                <div className="info-footer">
+                                    <img src={require("../../assets/img/20.png")} />
+                                    <span>支持人数</span><span>9758</span><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="home-active-four">
+                        <div>
+                            <div>
+                                <span>每日上新</span><span>更多></span>
+                            </div>
+                           <div className="goodsinfo">
+                               <div>
+                                    <img src={require("../../assets/img/23.png")} />
+                                    <p>小米手表</p>
+                               </div>
+                               <div>
+                                    <img src={require("../../assets/img/24.png")} />
+                                    <p>黑鲨游戏手机3</p>
+                               </div>
+                               <div>
+                                    <img src={require("../../assets/img/25.png")} />
+                                    <p>吸拖一体吸尘器</p>
+                               </div>
+                               <div>
+                                    <img src={require("../../assets/img/26.png")} />
+                                    <p>小米无线充音箱</p>
+                               </div>
+                               <div>
+                                    <img src={require("../../assets/img/23.png")} />
+                                    <p>小米手表</p>
+                               </div>
+                               <div>
+                                    <img src={require("../../assets/img/24.png")} />
+                                    <p>黑鲨游戏手机3</p>
+                               </div>
+                               <div>
+                                    <img src={require("../../assets/img/25.png")} />
+                                    <p>吸拖一体吸尘器</p>
+                               </div>
+                               
+                           </div>
+                        </div>
+                    </div>
+                    <div className="home-active-five">
+                        <div>
+                            <div>
+                                <span>热销榜</span>
+                                <span>排序由销量、搜索、好评等综合得出</span>
+                                <span>更多></span>
+                            </div>
+                           <div className="goodsinfo">
+                               <div>
+                                    <img src={require("../../assets/img/23.png")} />
+                                    <p>小米手表</p>
+                               </div>
+                               <div>
+                                    <img src={require("../../assets/img/24.png")} />
+                                    <p>黑鲨游戏手机3</p>
+                               </div>
+                               <div>
+                                    <img src={require("../../assets/img/25.png")} />
+                                    <p>吸拖一体吸尘器</p>
+                               </div>
+                               <div>
+                                    <img src={require("../../assets/img/26.png")} />
+                                    <p>小米无线充音箱</p>
+                               </div>
+                               <div>
+                                    <img src={require("../../assets/img/23.png")} />
+                                    <p>小米手表</p>
+                               </div>
+                               <div>
+                                    <img src={require("../../assets/img/24.png")} />
+                                    <p>黑鲨游戏手机3</p>
+                               </div>
+                               <div>
+                                    <img src={require("../../assets/img/25.png")} />
+                                    <p>吸拖一体吸尘器</p>
+                               </div>
+                               
+                           </div>
+                        </div>
+                    </div>
+                    <div className="home-active-six">
+                        <div>
+                            <div className="one">
+                                <span>特卖汇</span>
+                                <span>女神节特惠精选</span>
+                                <img src={require("../../assets/img/biao.png")} />
+                                <img src={require("../../assets/img/yuan.png")} />
+                            </div>
+                            <div className="two">
+                                <span>防疫指南</span>
+                                <span>开工&宅家</span>
+                                <img src={require("../../assets/img/ping.png")} />
+                            </div>
+                            <div className="three">
+                                <span>玩家福利</span>
+                                <span>先领券后购物</span>
+                                <img src={require("../../assets/img/erji.png")} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="home-list">
+                    <div className="home-list-content">
+                        <div className="home-list-top">
+                            <NavLink to="/home/tuijian">推荐</NavLink>
+                            <NavLink to="/home/zhineng">智能</NavLink>
+                            <NavLink to="/home/dianqi">电器</NavLink>
+                            <NavLink to="/home/shenghuo">生活</NavLink>
+                        </div>
+                        <div className="home-list-footer">
+                            <Switch>
+                                <Route path="/home/tuijian" component={Tuijian} />
+                                <Route path="/home/zhineng" component={Zhineng} />
+                                <Route path="/home/dianqi" component={Dianqi} />
+                                <Route path="/home/shenghuo" component={Shenghuo} />
+                                <Redirect from="/home" to="/home/tuijian" exact />
+                            </Switch>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             
         )
     }
