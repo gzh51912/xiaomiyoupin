@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class One extends Component {
+export default class Login extends Component {
     render() {
         return (
             <div>
-                手机数码
+                登陆
             </div>
         )
     }

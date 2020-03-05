@@ -15,3 +15,7 @@ export const dianqi =(id,imgurl,biaoti,info,price)=>{
 export const shenghuo =(id,imgurl,biaoti,info,price)=>{
     return axios.get("/shenghuo",{params:{id,imgurl,biaoti,info,price}})
 }
+
+export const getlist=(type)=>{//分类页
+    return axios.get('/type',{params:{type}})
+}

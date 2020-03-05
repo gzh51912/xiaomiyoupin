@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {shenghuo} from '../../api/request'
+import {tuijian} from '../../api/request'
 import './shenghuo.css'
 class Shenghuo extends Component {
     constructor(props){
@@ -12,7 +12,7 @@ class Shenghuo extends Component {
         this.getData()
     }
     getData(){
-        shenghuo().then((res)=>{
+        tuijian().then((res)=>{
             this.setState({
                 list:res
             })

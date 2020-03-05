@@ -1,11 +1,11 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import '../src/font/iconfont.css'
 import Home from './components/home'
 import List from './components/list'
 import Car from './components/car'
 import Mine from './components/mine'
+import Login from './components/login'
 import NotFound from './components/notfound'
 
 import {Route,NavLink,Redirect,Switch,withRouter} from 'react-router-dom'
@@ -36,6 +36,7 @@ class App extends React.Component{
         case '/home':document.title="首页";break;
         case '/car':document.title="购物车";break;
         case '/mine':document.title="我的";break;
+        case '/login':document.title="登录";break;
         default:
                 if(pathname.includes("/list/")){
                   document.title="分类"
@@ -57,6 +58,7 @@ class App extends React.Component{
             <Route path="/list" component={List} />
             <Route path="/car" component={Car} />
             <Route path="/mine" component={Mine} />
+            <Route path="/login" component={Login} />
             <Redirect from="/" to="/home" exact />
             <Route component={NotFound} />
         </Switch>

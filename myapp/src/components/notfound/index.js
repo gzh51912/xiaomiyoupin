@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
-import './notfound.css'
+
 
 export default class Notfound extends Component {
     render() {
         return (
-            <div className="notfound">
-                <img src={require("../../assets/img/404.jpg")} />
+            <div>
+                <div className="notfound">
+                    <img style={{"width":"12.25rem","height":"12.25rem"}} src={require("../../assets/img/404.jpg")} />
+                </div>
             </div>
         )
     }
