@@ -3,20 +3,24 @@ import '../../font/iconfont.css'
 import './mine.css'
  class Mine extends Component {
     login=()=>{
-        console.log(123);
         this.props.history.push("/login")
+    }
+    
+    quit=()=>{
+        console.log(123);
+        sessionStorage.clear();
     }
     render() {
         return (
             <div className="mine">
                 <div className="mine-top">
                     <img src={require("../../assets/img/touxiang.png")} />
-                    <span onClick={this.login}>请登陆</span>
+                    <span onClick={this.login}>{sessionStorage.getItem("user")?"你好米粉："+sessionStorage.getItem("user"):"请登陆"}</span>
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    <span>></span>
+                    <span onClick={this.quit}>{sessionStorage.getItem("user")?"退出":">"}</span>
                 </div>
                 <div className="mine-content">
                     <div className="mine-content-one">
@@ -51,7 +55,7 @@ import './mine.css'
                         <span>我的资产</span>
                         <span></span>
                         <span></span>
-                        <span style={{"font-size":"10px"}}>优惠券/积分</span>
+                        <span>优惠券/积分</span>
                         <span>></span>
                     </div>
                     <div className="mine-content-one">

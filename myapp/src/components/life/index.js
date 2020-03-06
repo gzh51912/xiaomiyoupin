@@ -31,7 +31,7 @@ import './life.css'
                                     <div>{item.title}</div>
                                     <div>{item.slogan}</div>
                                     <div>￥{item.price}</div>
-                                    <button className="button">立即购买</button>
+                                    <button className="button">查看详情</button>
                                 </li>
                             )
                         })

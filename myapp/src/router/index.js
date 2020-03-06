@@ -3,6 +3,8 @@ import List from '../components/list'
 import Car from '../components/car'
 import Mine from '../components/mine'
 import Login from '../components/login'
+import Reg from '../components/reg'
+import Details from '../components/details'
 // import Loadable from 'react-loadable'
 // var Home=Loadable({  //异步加载组件
 //     loader:()=>import("../App"),
@@ -31,6 +33,10 @@ export const routes =[
         component:Login
     },
     {
+        path:'/reg',
+        component:Reg
+    },
+    {
         path:'/404',
         component:NotFound
     }
@@ -45,5 +51,9 @@ export const subRoutes =[
     {
         path:'/mine/login',
         component:Login,
+    },
+    {
+        path:'/list/vioce/details',
+        component:Details,
     }
 ]

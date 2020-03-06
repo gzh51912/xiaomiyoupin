@@ -18,6 +18,10 @@ import './vioce.css'
             })
         })
     }
+    details(){
+        console.log(123);
+        // this.props.history.push("/details")
+    }
     render() {
         let {list} = this.state
         return (
@@ -31,7 +35,7 @@ import './vioce.css'
                                     <div>{item.title}</div>
                                     <div>{item.slogan}</div>
                                     <div>￥{item.price}</div>
-                                    <button className="button">立即购买</button>
+                                    <button className="button" onClick={this.details}>查看详情</button>
                                 </li>
                             )
                         })
