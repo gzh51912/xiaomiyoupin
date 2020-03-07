@@ -9,7 +9,6 @@ import Login from './components/login'
 import Reg from './components/reg'
 import Details from './components/details'
 import NotFound from './components/notfound'
-
 import {Route,NavLink,Redirect,Switch,withRouter} from 'react-router-dom'
 
 class App extends React.Component{
@@ -22,6 +21,7 @@ class App extends React.Component{
   componentDidMount(){
     this.changeTitle(this.props.location.pathname); //解决刷新问题的
     this.routeListen();  //组件一挂载就监听,  为了用setState
+    console.log(this.props.location.pathname);
   }
   routeListen(){  //监听路由的变化
        this.props.history.listen((location)=>{

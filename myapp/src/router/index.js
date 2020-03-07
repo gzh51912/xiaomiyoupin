@@ -37,6 +37,10 @@ export const routes =[
         component:Reg
     },
     {
+        path:'/details',
+        component:Details
+    },
+    {
         path:'/404',
         component:NotFound
     }

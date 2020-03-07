@@ -1,0 +1,95 @@
+.details{
+    width: 100%;
+    .det-top{
+        width: 100%;
+        height: 2.25rem;
+        background-color: #f4f4f4;
+        text-align: left;
+        line-height: 2.25rem;
+    }
+    .det-banner{
+        width: 100%;
+        img{
+            width: 25.875rem;
+            height: 24.25rem;
+        }
+    }
+    .det-info{
+        width: 100%;
+        .det-goods{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            :nth-child(1){
+                font-size: 1.5625rem;
+                font-weight: bold;
+                color: #b60909;
+                
+            }
+            :nth-child(2){
+                font-size: 1.0625rem;
+                color: #333333;
+            }
+            :nth-child(3){
+                font-size: .625rem;
+                color: #333333;
+            }
+        }
+    }
+    .det-center{
+        width: 100%;
+        margin-top: .625rem;
+        text-align: left;
+        img{
+            width: 100%;
+            height: 2.55rem;
+        }
+    }
+    .det-centerA{
+        width: 100%;
+        margin-top: .625rem;
+        margin-bottom: 1.875rem;
+        text-align: left;
+        img{
+            width: 100%;
+            height: 2.55rem;
+        }
+    }
+    .det-num{
+        width: 100%;
+        text-align: left;
+        :nth-child(1){
+            margin-left: .625rem;
+        }
+    }
+    .det-footer{
+        width: 100%;
+        height: 2.875rem;
+        margin-top: .625rem;
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        z-index: 99999;
+        display: flex;
+        justify-content: space-around;
+        span{
+            display: inline-block;
+            height: 2.875rem;
+        }
+        :nth-child(1){
+            width: 25%;
+            line-height: 2.875rem;
+        }
+        :nth-child(2){
+            width: 25%;
+            line-height: 2.875rem;
+        }
+        :nth-child(3){
+            width: 50%;
+            background-color: red;
+            border-radius: .9125rem;
+            line-height: 2.875rem;
+        }
+    }
+}

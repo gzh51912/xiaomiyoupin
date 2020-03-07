@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import actionCreator from '../../store/actionCreator';
+import {connect} from 'react-redux';
 import {getlist} from '../../api/request'
 import './phone.css'
  class Phone extends Component {
@@ -18,6 +20,10 @@ import './phone.css'
             })
         })
     }
+    details=(id)=>{
+        this.props.details(id)
+        this.props.history.push("/details")
+    }
     render() {
         let {list} = this.state
         return (
@@ -26,7 +32,7 @@ import './phone.css'
                     {
                         list.map((item)=>{
                             return(
-                                <li>
+                                <li onClick={this.details.bind(this,item.id)}>
                                     <div><img src={item.src} /></div>
                                     <div>{item.title}</div>
                                     <div>{item.slogan}</div>
@@ -41,4 +47,9 @@ import './phone.css'
         )
     }
 }
-export default Phone
+var mapState=(state)=>{
+    return{
+        
+    }
+}
+export default connect(mapState,actionCreator)(Phone)
